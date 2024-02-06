@@ -18,8 +18,8 @@
         "omitMessageOnStart": false,
         "repeat": "0",
         "topic": "",
-        "x": 370,
-        "y": 220,
+        "x": 390,
+        "y": 180,
         "wires": [
             [
                 "265f158293a009ec"
