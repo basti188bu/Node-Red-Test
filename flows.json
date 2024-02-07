@@ -232,7 +232,7 @@
         "name": "",
         "property": "payload",
         "action": "",
-        "pretty": false,
+        "pretty": true,
         "x": 470,
         "y": 260,
         "wires": [
