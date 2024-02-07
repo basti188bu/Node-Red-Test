@@ -517,7 +517,7 @@
         "wires": [
             [
                 "be1bca81e441fd47",
-                "8b5f6c04.3b618"
+                "8e76b58864730104"
             ]
         ]
     },
@@ -537,6 +537,40 @@
         "x": 540,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "8e76b58864730104",
+        "type": "change",
+        "z": "a64b091a.a1bf2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "GET",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "https://api.awattar.de/v1/marketdata",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "8b5f6c04.3b618"
+            ]
+        ]
     },
     {
         "id": "41747a17.54ffd4",
