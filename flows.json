@@ -604,8 +604,15 @@
         "name": "",
         "method": "GET",
         "ret": "obj",
+        "paytoqs": "ignore",
         "url": "https://jsonplaceholder.typicode.com/posts/{{post}}",
         "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
         "x": 430,
         "y": 100,
         "wires": [
@@ -620,8 +627,13 @@
         "z": "82e4deed385d6f9c",
         "name": "",
         "active": true,
-        "console": "false",
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
         "complete": "payload.title",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 610,
         "y": 100,
         "wires": []
@@ -631,9 +643,19 @@
         "type": "inject",
         "z": "82e4deed385d6f9c",
         "name": "post id",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
+        "onceDelay": "",
         "topic": "",
         "payload": "2",
         "payloadType": "str",
