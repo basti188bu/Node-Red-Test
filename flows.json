@@ -200,7 +200,7 @@
         "method": "use",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "https://api.awattar.de/v1/marketdata",
+        "url": " ",
         "tls": "",
         "persist": false,
         "proxy": "",
