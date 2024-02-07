@@ -217,29 +217,29 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 230,
-        "y": 260,
+        "x": 190,
+        "y": 280,
         "wires": [
             [
-                "ea06465b02fe434a"
+                "c3453415c7c09d78"
             ]
         ]
     },
     {
-        "id": "ea06465b02fe434a",
-        "type": "json",
+        "id": "c3453415c7c09d78",
+        "type": "debug",
         "z": "2674d96e699cd9f1",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": true,
-        "x": 470,
-        "y": 260,
-        "wires": [
-            [
-                "265f158293a009ec"
-            ]
-        ]
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "8b5f6c04.3b618",
