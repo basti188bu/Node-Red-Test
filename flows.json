@@ -554,7 +554,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 410,
+        "x": 430,
         "y": 160,
         "wires": [
             [
@@ -575,7 +575,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
+        "x": 630,
         "y": 160,
         "wires": []
     },
@@ -632,7 +632,8 @@
         "y": 160,
         "wires": [
             [
-                "41747a17.54ffd4"
+                "41747a17.54ffd4",
+                "3b19b3b31afb4392"
             ]
         ]
     },
@@ -649,6 +650,22 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 280,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3b19b3b31afb4392",
+        "type": "debug",
+        "z": "82e4deed385d6f9c",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
         "y": 80,
         "wires": []
     }
