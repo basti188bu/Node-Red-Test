@@ -692,7 +692,7 @@
         "type": "debug",
         "z": "82e4deed385d6f9c",
         "name": "debug 4",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
