@@ -555,8 +555,8 @@
                 "t": "set",
                 "p": "url",
                 "pt": "msg",
-                "to": "https://api.awattar.de/v1/marketdata",
-                "tot": "str"
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
