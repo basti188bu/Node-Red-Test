@@ -221,6 +221,22 @@
         "y": 260,
         "wires": [
             [
+                "ea06465b02fe434a"
+            ]
+        ]
+    },
+    {
+        "id": "ea06465b02fe434a",
+        "type": "json",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
                 "265f158293a009ec"
             ]
         ]
