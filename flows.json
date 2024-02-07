@@ -200,7 +200,7 @@
         "method": "use",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": " ",
+        "url": "",
         "tls": "",
         "persist": false,
         "proxy": "",
