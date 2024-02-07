@@ -526,7 +526,7 @@
         "type": "debug",
         "z": "a64b091a.a1bf2",
         "name": "debug 2",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
