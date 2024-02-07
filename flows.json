@@ -129,25 +129,6 @@
         }
     },
     {
-        "id": "0c49d338c7b549eb",
-        "type": "dwdweather",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "mosmixStation": "E790",
-        "lookAheadHours": "0",
-        "additionalFields": "N, SunD1, RRS3c",
-        "omitMessageOnStart": false,
-        "repeat": "0",
-        "topic": "",
-        "x": 390,
-        "y": 180,
-        "wires": [
-            [
-                "265f158293a009ec"
-            ]
-        ]
-    },
-    {
         "id": "265f158293a009ec",
         "type": "debug",
         "z": "2674d96e699cd9f1",
@@ -189,6 +170,25 @@
         "wires": [
             [
                 "0c49d338c7b549eb"
+            ]
+        ]
+    },
+    {
+        "id": "0c49d338c7b549eb",
+        "type": "dwdweather",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "mosmixStation": "E790",
+        "lookAheadHours": "0",
+        "additionalFields": "N, SunD1, RRS3c",
+        "omitMessageOnStart": false,
+        "repeat": "0",
+        "topic": "",
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "265f158293a009ec"
             ]
         ]
     },
@@ -483,8 +483,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 620,
-        "y": 540,
+        "x": 630,
+        "y": 560,
         "wires": [
             []
         ]
