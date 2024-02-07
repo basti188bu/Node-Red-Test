@@ -248,7 +248,7 @@
         "z": "2674d96e699cd9f1",
         "name": "",
         "property": "payload",
-        "action": "str",
+        "action": "obj",
         "pretty": false,
         "x": 370,
         "y": 460,
