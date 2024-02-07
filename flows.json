@@ -141,7 +141,7 @@
         "type": "debug",
         "z": "2674d96e699cd9f1",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -235,8 +235,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 130,
-        "y": 340,
+        "x": 90,
+        "y": 160,
         "wires": [
             [
                 "f9ea60a0766d03c6"
@@ -248,7 +248,7 @@
         "type": "debug",
         "z": "a64b091a.a1bf2",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -346,8 +346,8 @@
         "z": "a64b091a.a1bf2",
         "name": "aWATTar abfragen",
         "info": "",
-        "x": 450,
-        "y": 260,
+        "x": 630,
+        "y": 80,
         "wires": []
     },
     {
@@ -388,7 +388,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 280,
         "y": 460,
         "wires": [
             [
