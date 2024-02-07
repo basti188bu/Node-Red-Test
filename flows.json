@@ -482,7 +482,7 @@
         "removeOlderPoints": "",
         "removeOlderUnit": "3600",
         "cutout": 0,
-        "useOneColor": true,
+        "useOneColor": false,
         "useUTC": false,
         "colors": [
             "#1f77b4",
@@ -497,6 +497,7 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
+        "className": "",
         "x": 630,
         "y": 560,
         "wires": [
