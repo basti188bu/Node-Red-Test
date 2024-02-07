@@ -177,8 +177,7 @@
         "y": 60,
         "wires": [
             [
-                "0c49d338c7b549eb",
-                "dc050dc16edbf558"
+                "0c49d338c7b549eb"
             ]
         ]
     },
@@ -200,46 +199,6 @@
                 "265f158293a009ec"
             ]
         ]
-    },
-    {
-        "id": "dc050dc16edbf558",
-        "type": "http request",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://s3.eu-central-1.amazonaws.co/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 310,
-        "y": 200,
-        "wires": [
-            [
-                "9440a7c8f795b07b"
-            ]
-        ]
-    },
-    {
-        "id": "9440a7c8f795b07b",
-        "type": "debug",
-        "z": "2674d96e699cd9f1",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "8b5f6c04.3b618",
