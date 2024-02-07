@@ -380,7 +380,7 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "",
-        "func": "let message = msg.payload;\nvar msg1 = {};\nvar msg2 = {};\nvar daten = [];\nvar stunden = [];\nvar preisenetto = [];\nvar preisebrutto = [];\n\nfor(let i = 0; i<message.length; i++){\n    let hour = new Date(message[i].start_timestamp);\n    let stunde = hour.getHours();\n    let price = message[i].marketprice/10;\n    \n    daten.push([price, hour]);\n    stunden.push(stunde);\n    preisenetto.push(price);\n    preisebrutto.push(price * 1.22 + 15.92);\n\n}\n\nmsg1.payload = [{\n    \"series\": [\"Nettopreise\"],\n    \"data\": [preisenetto]}];\nmsg1.topic = 'Set1';\n\n//msg2.payload = [{\n//    \"series\": [\"Bruttopreise\"],\n//    \"data\": [preisebrutto],\n//    \"labels\": stunden}];\nmsg2.topic = 'Set2';\nmsg2.data = [preisebrutto]\n\nreturn [{payload: daten}, msg1, msg2];\n",
+        "func": "let message = msg.payload;\nvar msg1 = {};\nvar msg2 = {};\nvar daten = [];\nvar stunden = [];\nvar preisenetto = [];\nvar preisebrutto = [];\n\nfor(let i = 0; i<message.length; i++){\n    let hour = new Date(message[i].start_timestamp);\n    let stunde = hour.getHours();\n    let price = message[i].marketprice/10;\n    \n    daten.push([price, hour]);\n    stunden.push(stunde);\n    preisenetto.push(price);\n    preisebrutto.push(price * 1.22 + 15.92);\n\n}\n\nmsg1.payload = [{\n    \"series\": [\"Nettopreise\"],\n    \"data\": [preisenetto]}];\nmsg1.topic = 'Set1';\n\nmsg2.payload = [{\n    \"series\": [\"Bruttopreise\"],\n    \"data\": [preisebrutto],\n    \"labels\": stunden}];\nmsg2.topic = 'Set2';\n\n\nreturn [{payload: daten}, msg1, msg2];\n",
         "outputs": 3,
         "timeout": "",
         "noerr": 0,
