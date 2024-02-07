@@ -498,7 +498,7 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "function 1",
-        "func": "let time = new Date();\nlet timestart=time.getTime();\nmsg.method = 'GET'; \nreturn msg;",
+        "func": "let time = new Date();\nlet timestart=time.getTime();\nmsg.method = 'GET'; \nreturn {payload: msg};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
