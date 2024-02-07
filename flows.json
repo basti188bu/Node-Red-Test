@@ -498,15 +498,15 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "function 1",
-        "func": "let time = new Date();\nlet timestart=time.getTime();\n\nreturn {payload: timestart};",
+        "func": "let time = new Date();\nlet timestart=time.getTime();\nlet method = 'GET';\nreturn {payload: timestart, method};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 160,
+        "x": 260,
+        "y": 120,
         "wires": [
             [
                 "be1bca81e441fd47"
