@@ -505,7 +505,7 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "function 1",
-        "func": "let time = new Date();\nlet timestart=time.getTime();\n\nlet url = \"https://api.awattar.de/v1/marketdata?start=\" + timestart + \"&end=\" + (timestart + 172800000);\n\nreturn {payload: url};",
+        "func": "let time = new Date();\nlet timestart = time.getTime();\nlet timeend = (timestart + 172800000);\n\nlet url = \"https://api.awattar.de/v1/marketdata?start=\" + timestart + \"&end=\" + timeend;\n\nreturn {payload: url};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
