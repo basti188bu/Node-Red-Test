@@ -467,7 +467,7 @@
         "width": 0,
         "height": 0,
         "label": "ct/kWh",
-        "chartType": "bar",
+        "chartType": "line",
         "legend": "true",
         "xformat": "auto",
         "interpolate": "linear",
