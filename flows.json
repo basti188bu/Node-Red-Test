@@ -497,7 +497,7 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "function 1",
-        "func": "let time = new Date();\nlet timestart=time.getTime();\nmsg.method = 'GET'; \nmsg.url='https://api.awattar.de/v1/marketdata';\nreturn {payload: msg};",
+        "func": "let time = new Date();\nlet timestart=time.getTime();\nmsg.method = 'GET'; \nmsg.url=\"https://api.awattar.de/v1/marketdata\";\n\n//flow.set(\"myVar\",\"https://myURL.com/api/\");\n//Set msg.url to flow.myVar;\nreturn {payload: msg};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -526,8 +526,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 160,
+        "x": 540,
+        "y": 100,
         "wires": []
     }
 ]
