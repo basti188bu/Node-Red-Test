@@ -178,7 +178,8 @@
         "wires": [
             [
                 "0c49d338c7b549eb",
-                "a8754ec0c941d421"
+                "a8754ec0c941d421",
+                "4f2a165e0f64bdbd"
             ]
         ]
     },
@@ -207,7 +208,7 @@
         "z": "2674d96e699cd9f1",
         "name": "",
         "method": "GET",
-        "ret": "obj",
+        "ret": "txt",
         "paytoqs": "ignore",
         "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
         "tls": "",
@@ -220,9 +221,7 @@
         "x": 190,
         "y": 280,
         "wires": [
-            [
-                "c3453415c7c09d78"
-            ]
+            []
         ]
     },
     {
@@ -240,6 +239,26 @@
         "x": 480,
         "y": 240,
         "wires": []
+    },
+    {
+        "id": "4f2a165e0f64bdbd",
+        "type": "function",
+        "z": "2674d96e699cd9f1",
+        "name": "function 2",
+        "func": "msg.payload = {\"trend\":{\"start\":1707652800000,\"temperature\":[40,31,29,26,38,31,25,20,39,27,20,20,19,19,43,43,31,31,18,18,14,14,32,32,20,20,14,14,12,12,34,34,34,30,30,30,16,16,16,13,13,13,43,43,43],\"temperatureStd\":[16,14,15,11,16,17,17,16,15,14,16,16,17,17,15,15,16,16,15,15,16,16,16,16,18,18,20,20,19,19,17,17,17,19,19,19,20,20,20,20,20,20,21,21,21],\"precipitationProbabilityHigh\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32767,32767,32767],\"precipitationProbabilityLow\":[600,700,600,700,700,600,600,600,500,600,600,500,500,500,500,400,400,500,500,500,500,600,600,600,600,600,600,500,500,600,600,600,500,500,500,600,600,600,500,500,500,500,500,500]},\"days\":[{\"stationId\":null,\"dayDate\":\"2024-02-07\",\"temperatureMin\":-2,\"temperatureMax\":59,\"precipitation\":0,\"windSpeed\":278,\"windGust\":593,\"windDirection\":2840,\"sunshine\":920,\"sunrise\":1707288233000,\"sunset\":1707321476000,\"moonrise\":1707285457000,\"moonset\":1707306812000,\"moonPhase\":7,\"icon\":null,\"icon1\":3,\"icon2\":3},{\"stationId\":null,\"dayDate\":\"2024-02-08\",\"temperatureMin\":-6,\"temperatureMax\":34,\"precipitation\":0,\"windSpeed\":111,\"windGust\":259,\"windDirection\":2420,\"sunshine\":1640,\"sunrise\":1707374519000,\"sunset\":1707407996000,\"moonrise\":1707374386000,\"moonset\":1707398581000,\"moonPhase\":7,\"icon\":null,\"icon1\":3,\"icon2\":3},{\"stationId\":null,\"dayDate\":\"2024-02-09\",\"temperatureMin\":4,\"temperatureMax\":16,\"precipitation\":58,\"windSpeed\":241,\"windGust\":500,\"windDirection\":920,\"sunshine\":0,\"sunrise\":1707460802000,\"sunset\":1707494519000,\"moonrise\":1707462378000,\"moonset\":1707490950000,\"moonPhase\":7,\"icon\":null,\"icon1\":7,\"icon2\":12},{\"stationId\":null,\"dayDate\":\"2024-02-10\",\"temperatureMin\":13,\"temperatureMax\":38,\"precipitation\":15,\"windSpeed\":167,\"windGust\":333,\"windDirection\":910,\"sunshine\":0,\"sunrise\":1707547084000,\"sunset\":1707581042000,\"moonrise\":1707549838000,\"moonset\":1707583395000,\"moonPhase\":0,\"icon\":null,\"icon1\":7,\"icon2\":4}],\"forecast\":{\"start\":1707307200000,\"temperature\":[42,18,-4,-1,32,16,6,5,15,16,13,13,20,20,38,38,34,34,31,31,33,33,40,40],\"temperatureStd\":[10,9,12,11,9,12,13,13,9,13,12,12,13,13,13,13,14,14,14,14,15,15,16,16],\"windDirection\":[2840,2710,2190,2200,2420,1780,1080,970,920,940,950,950,910,910,910,910,840,840,770,770,710,710,710,710],\"windGust\":[518,370,185,241,241,148,130,315,426,463,370,370,333,333,278,278,296,296,296,296,333,333,352,352],\"windSpeed\":[278,130,93,111,111,37,74,185,241,259,204,204,167,167,167,167,167,167,167,167,185,185,222,222],\"icon\":[7,2,2,3,22,3,4,4,14,14,7,7,7,7,7,7,7,7,4,4,4,4,7,7],\"precipitationTotal\":[0,0,0,0,0,0,0,14,29,18,18,9,9,3,3,1,1,0,0,0,0,2,2]}};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "c3453415c7c09d78"
+            ]
+        ]
     },
     {
         "id": "8b5f6c04.3b618",
