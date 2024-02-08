@@ -137,6 +137,20 @@
         }
     },
     {
+        "id": "d7d56761e9eab1a1",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "_.s3.eu-central-1.amazonaws.com",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
         "id": "265f158293a009ec",
         "type": "debug",
         "z": "2674d96e699cd9f1",
@@ -211,17 +225,19 @@
         "ret": "txt",
         "paytoqs": "ignore",
         "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
-        "tls": "",
+        "tls": "d7d56761e9eab1a1",
         "persist": false,
         "proxy": "",
-        "insecureHTTPParser": true,
+        "insecureHTTPParser": false,
         "authType": "",
         "senderr": false,
         "headers": [],
         "x": 190,
         "y": 280,
         "wires": [
-            []
+            [
+                "c3453415c7c09d78"
+            ]
         ]
     },
     {
@@ -255,9 +271,7 @@
         "x": 230,
         "y": 400,
         "wires": [
-            [
-                "c3453415c7c09d78"
-            ]
+            []
         ]
     },
     {
