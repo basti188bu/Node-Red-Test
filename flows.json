@@ -143,11 +143,11 @@
         "cert": "",
         "key": "",
         "ca": "",
-        "certname": "_.s3.eu-central-1.amazonaws.com",
+        "certname": "_.s3.eu-central-1.amazonaws.com_zert",
         "keyname": "",
         "caname": "",
         "servername": "",
-        "verifyservercert": true,
+        "verifyservercert": false,
         "alpnprotocol": ""
     },
     {
