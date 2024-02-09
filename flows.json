@@ -251,8 +251,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 260,
+        "x": 700,
+        "y": 300,
         "wires": []
     },
     {
@@ -261,6 +261,22 @@
         "z": "2674d96e699cd9f1",
         "name": "",
         "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "05a2b01cd2964821"
+            ]
+        ]
+    },
+    {
+        "id": "05a2b01cd2964821",
+        "type": "json",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
         "y": 400,
         "wires": [
             [
