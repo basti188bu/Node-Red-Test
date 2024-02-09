@@ -151,6 +151,20 @@
         "alpnprotocol": ""
     },
     {
+        "id": "a87f6ae974515bde",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "_.s3.eu-central-1.amazonaws.com_zert",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
         "id": "265f158293a009ec",
         "type": "debug",
         "z": "2674d96e699cd9f1",
@@ -284,7 +298,7 @@
         "ret": "txt",
         "paytoqs": "ignore",
         "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
-        "tls": "",
+        "tls": "a87f6ae974515bde",
         "persist": false,
         "proxy": "",
         "authType": "",
