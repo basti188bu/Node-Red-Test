@@ -293,7 +293,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended?stationIds=K3910",
+        "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended?stationIds=E790",
         "tls": "",
         "persist": false,
         "proxy": "",
