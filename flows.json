@@ -261,7 +261,7 @@
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm",
-        "interpolate": "linear",
+        "interpolate": "step",
         "nodata": "",
         "dot": false,
         "ymin": "",
