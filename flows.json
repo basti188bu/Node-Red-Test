@@ -291,7 +291,7 @@
         "z": "2674d96e699cd9f1",
         "name": "",
         "method": "GET",
-        "ret": "txt",
+        "ret": "obj",
         "paytoqs": "ignore",
         "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended?stationIds=K3910",
         "tls": "",
