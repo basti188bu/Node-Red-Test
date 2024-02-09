@@ -206,7 +206,8 @@
         "y": 60,
         "wires": [
             [
-                "d62539352e79994a"
+                "d62539352e79994a",
+                "950c3cc74b034996"
             ]
         ]
     },
@@ -231,10 +232,10 @@
         "type": "function",
         "z": "2674d96e699cd9f1",
         "name": "function 2",
-        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nvar tempsfc = [];\nvar labelfc = [];\nlet forecast_1 = Test.E790.forecast1;\n\nfor(let i=0; i<forecast_1.temperature.length; i++){\n    label.push(i);\n    if (forecast_1.temperature[i] < 32767){\n        labelfc.push(label[i]);\n        tempsfc.push(forecast_1.temperature[i]/10);\n    };\n};\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [tempsfc];\nmsg1.labels = labelfc;\n\n\n\n\nreturn {payload: [msg1]};",
+        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nvar tempsfc = [];\nvar labelfc = [];\nlet forecast_1 = Test.E790.forecast1;\n\nfor(let i=0; i<forecast_1.temperature.length; i++){\n    label.push(i);\n    if (forecast_1.temperature[i] < 32767){\n        labelfc.push(label[i]);\n        tempsfc.push(forecast_1.temperature[i]/10);\n    };\n};\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [tempsfc];\nmsg1.labels = labelfc;\nmsg1.test = forecast_1.\n\n\n\n\nreturn {payload: [msg1]};",
         "outputs": 1,
         "timeout": 0,
-        "noerr": 0,
+        "noerr": 2,
         "initialize": "",
         "finalize": "",
         "libs": [],
@@ -318,6 +319,22 @@
                 "b2e9113c13a19b5c"
             ]
         ]
+    },
+    {
+        "id": "950c3cc74b034996",
+        "type": "debug",
+        "z": "2674d96e699cd9f1",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 60,
+        "wires": []
     },
     {
         "id": "8b5f6c04.3b618",
