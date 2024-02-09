@@ -258,7 +258,7 @@
         "height": 0,
         "label": "chart",
         "chartType": "line",
-        "legend": "false",
+        "legend": "true",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
         "nodata": "",
