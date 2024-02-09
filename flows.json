@@ -231,7 +231,7 @@
         "type": "function",
         "z": "2674d96e699cd9f1",
         "name": "function 2",
-        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nlet forecast_1 = Test.E790.forecast1;\n\nfor(let i=0; i<forecast_1.temperature.length; i++){\n    label.push(i);\n}\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [forecast_1.temperature];\nmsg1.labels = [label];\n\n\n\n\nreturn {payload: [msg1]};",
+        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nlet forecast_1 = Test.E790.forecast1;\n\nfor(let i=0; i<forecast_1.temperature.length; i++){\n    label.push(i);\n}\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [forecast_1.temperature];\nmsg1.labels = label;\n\n\n\n\nreturn {payload: [msg1]};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
