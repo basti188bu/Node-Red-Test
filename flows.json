@@ -137,22 +137,6 @@
         }
     },
     {
-        "id": "265f158293a009ec",
-        "type": "debug",
-        "z": "2674d96e699cd9f1",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 80,
-        "wires": []
-    },
-    {
         "id": "eb545a934afd984b",
         "type": "inject",
         "z": "2674d96e699cd9f1",
@@ -177,111 +161,7 @@
         "y": 60,
         "wires": [
             [
-                "0c49d338c7b549eb",
-                "a8754ec0c941d421",
                 "b2e9113c13a19b5c"
-            ]
-        ]
-    },
-    {
-        "id": "0c49d338c7b549eb",
-        "type": "dwdweather",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "mosmixStation": "E790",
-        "lookAheadHours": "0",
-        "additionalFields": "N, SunD1, RRS3c",
-        "omitMessageOnStart": false,
-        "repeat": "0",
-        "topic": "",
-        "x": 290,
-        "y": 80,
-        "wires": [
-            [
-                "265f158293a009ec"
-            ]
-        ]
-    },
-    {
-        "id": "a8754ec0c941d421",
-        "type": "http request",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "method": "GET",
-        "ret": "bin",
-        "paytoqs": "ignore",
-        "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_K3910.json",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "Content-Type",
-                "keyValue": "",
-                "valueType": "application/json",
-                "valueValue": ""
-            },
-            {
-                "keyType": "other",
-                "keyValue": "content-encoding",
-                "valueType": "other",
-                "valueValue": "gzip"
-            }
-        ],
-        "x": 230,
-        "y": 240,
-        "wires": [
-            [
-                "cedb10725a648f84"
-            ]
-        ]
-    },
-    {
-        "id": "c3453415c7c09d78",
-        "type": "debug",
-        "z": "2674d96e699cd9f1",
-        "name": "debug 5",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "cedb10725a648f84",
-        "type": "gzip",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "x": 410,
-        "y": 400,
-        "wires": [
-            [
-                "05a2b01cd2964821"
-            ]
-        ]
-    },
-    {
-        "id": "05a2b01cd2964821",
-        "type": "json",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 590,
-        "y": 400,
-        "wires": [
-            [
-                "c3453415c7c09d78"
             ]
         ]
     },
@@ -302,7 +182,7 @@
         "senderr": false,
         "headers": [],
         "x": 270,
-        "y": 500,
+        "y": 60,
         "wires": [
             [
                 "be352772f8a4beb7"
@@ -321,8 +201,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 500,
+        "x": 460,
+        "y": 60,
         "wires": []
     },
     {
