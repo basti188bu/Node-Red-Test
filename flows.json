@@ -270,7 +270,7 @@
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
         "cutout": 0,
-        "useOneColor": false,
+        "useOneColor": true,
         "useUTC": false,
         "colors": [
             "#1f77b4",
