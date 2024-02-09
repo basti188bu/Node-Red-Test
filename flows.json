@@ -178,7 +178,8 @@
         "wires": [
             [
                 "0c49d338c7b549eb",
-                "a8754ec0c941d421"
+                "a8754ec0c941d421",
+                "b2e9113c13a19b5c"
             ]
         ]
     },
@@ -230,8 +231,8 @@
                 "valueValue": "gzip"
             }
         ],
-        "x": 190,
-        "y": 280,
+        "x": 230,
+        "y": 240,
         "wires": [
             [
                 "cedb10725a648f84"
@@ -283,6 +284,46 @@
                 "c3453415c7c09d78"
             ]
         ]
+    },
+    {
+        "id": "b2e9113c13a19b5c",
+        "type": "http request",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": true,
+        "headers": [],
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "be352772f8a4beb7"
+            ]
+        ]
+    },
+    {
+        "id": "be352772f8a4beb7",
+        "type": "debug",
+        "z": "2674d96e699cd9f1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 500,
+        "wires": []
     },
     {
         "id": "8b5f6c04.3b618",
