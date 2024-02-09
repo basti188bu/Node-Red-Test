@@ -228,6 +228,12 @@
                 "keyValue": "",
                 "valueType": "gzip",
                 "valueValue": ""
+            },
+            {
+                "keyType": "User-Agent",
+                "keyValue": "",
+                "valueType": "Mozilla/5.0",
+                "valueValue": ""
             }
         ],
         "x": 190,
