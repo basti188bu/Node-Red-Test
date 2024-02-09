@@ -258,7 +258,7 @@
         "width": 20,
         "height": 12,
         "label": "chart",
-        "chartType": "bar",
+        "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm",
         "interpolate": "linear",
