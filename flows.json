@@ -224,10 +224,10 @@
                 "valueValue": ""
             },
             {
-                "keyType": "Accept-Encoding",
-                "keyValue": "",
-                "valueType": "gzip, deflate",
-                "valueValue": ""
+                "keyType": "other",
+                "keyValue": "content-encoding",
+                "valueType": "other",
+                "valueValue": "gzip"
             }
         ],
         "x": 190,
