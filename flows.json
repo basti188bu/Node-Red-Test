@@ -49,7 +49,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -137,6 +138,26 @@
         }
     },
     {
+        "id": "536f41b908643e8b",
+        "type": "ui_tab",
+        "name": "Wettervorhersage",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8e3de957ff72c860",
+        "type": "ui_group",
+        "name": "Wetter",
+        "tab": "536f41b908643e8b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "eb545a934afd984b",
         "type": "inject",
         "z": "2674d96e699cd9f1",
@@ -221,8 +242,53 @@
         "y": 200,
         "wires": [
             [
-                "be352772f8a4beb7"
+                "be352772f8a4beb7",
+                "cf5e81f9b5e3d791"
             ]
+        ]
+    },
+    {
+        "id": "cf5e81f9b5e3d791",
+        "type": "ui_chart",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "group": "8e3de957ff72c860",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 260,
+        "wires": [
+            []
         ]
     },
     {
