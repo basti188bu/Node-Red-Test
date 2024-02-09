@@ -232,7 +232,7 @@
         "type": "function",
         "z": "2674d96e699cd9f1",
         "name": "Temperaturverlauf",
-        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nvar tempsfc = [];\nvar labelfc = [];\nlet forecast_1 = Test.E790.forecast1;\n\n//for(let i=0; i<forecast_1.temperature.length; i++){\nfor(let i=0; i<72; i++){\n    var datefc = new Date((i * 3600000) + forecast_1.start);\n    var hour = datefc.getHours();\n    //var hour = datefc;\n    label.push(hour);\n    if (forecast_1.temperature[i] < 32767){\n        labelfc.push(label[i]);\n        tempsfc.push(forecast_1.temperature[i]/10);\n    };\n};\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [tempsfc];\nmsg1.labels = labelfc;\n\n\nmsg1.test = hour;\n\n\nreturn {payload: [msg1]};",
+        "func": "var Test = msg.payload;\nvar msg1 = {};\nvar label = [];\nvar tempsfc = [];\nvar labelfc = [];\nlet forecast_1 = Test.E790.forecast1;\n\n//for(let i=0; i<forecast_1.temperature.length; i++){\nfor(let i=0; i<73; i++){\n    var datefc = new Date((i * 3600000) + forecast_1.start);\n    var hour = datefc.getHours();\n    //var hour = datefc;\n    label.push(hour);\n    if (forecast_1.temperature[i] < 32767){\n        labelfc.push(label[i]);\n        tempsfc.push(forecast_1.temperature[i]/10);\n    };\n};\nmsg1.series = [\"Temperatur\"];\nmsg1.data = [tempsfc];\nmsg1.labels = labelfc;\n\n\nmsg1.test = hour;\n\n\nreturn {payload: [msg1]};",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
