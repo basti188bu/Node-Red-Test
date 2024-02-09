@@ -211,12 +211,31 @@
         "paytoqs": "ignore",
         "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
         "tls": "",
-        "persist": false,
+        "persist": true,
         "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
         "senderr": false,
-        "headers": [],
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/json"
+            },
+            {
+                "keyType": "Accept",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "*/*"
+            },
+            {
+                "keyType": "Accept-Encoding",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "gzip/deflate/br"
+            }
+        ],
         "x": 190,
         "y": 280,
         "wires": [
