@@ -155,7 +155,7 @@
         "type": "debug",
         "z": "2674d96e699cd9f1",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -193,7 +193,8 @@
             [
                 "0c49d338c7b549eb",
                 "a8754ec0c941d421",
-                "4f2a165e0f64bdbd"
+                "4f2a165e0f64bdbd",
+                "4f5c07ea7f0440d9"
             ]
         ]
     },
@@ -245,7 +246,7 @@
         "type": "debug",
         "z": "2674d96e699cd9f1",
         "name": "debug 5",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -273,6 +274,44 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "4f5c07ea7f0440d9",
+        "type": "https-node",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "8ae140d087065d61"
+            ]
+        ]
+    },
+    {
+        "id": "8ae140d087065d61",
+        "type": "debug",
+        "z": "2674d96e699cd9f1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 460,
+        "wires": []
     },
     {
         "id": "8b5f6c04.3b618",
