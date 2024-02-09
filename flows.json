@@ -137,34 +137,6 @@
         }
     },
     {
-        "id": "d7d56761e9eab1a1",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "_.s3.eu-central-1.amazonaws.com_zert",
-        "keyname": "",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "a87f6ae974515bde",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "_.s3.eu-central-1.amazonaws.com_zert",
-        "keyname": "",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
         "id": "265f158293a009ec",
         "type": "debug",
         "z": "2674d96e699cd9f1",
