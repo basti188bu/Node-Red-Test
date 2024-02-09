@@ -308,7 +308,7 @@
         "className": "",
         "icon": "",
         "payload": "",
-        "payloadType": "str",
+        "payloadType": "date",
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
