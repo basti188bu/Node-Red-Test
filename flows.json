@@ -190,7 +190,7 @@
         "id": "b2e9113c13a19b5c",
         "type": "http request",
         "z": "2674d96e699cd9f1",
-        "name": "",
+        "name": "DWD Wolfsburg",
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
@@ -202,7 +202,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 270,
+        "x": 280,
         "y": 60,
         "wires": [
             [
