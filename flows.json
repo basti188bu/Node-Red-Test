@@ -292,6 +292,34 @@
         ]
     },
     {
+        "id": "1ab9b248bc8970f3",
+        "type": "ui_button",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "group": "8e3de957ff72c860",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "b2e9113c13a19b5c"
+            ]
+        ]
+    },
+    {
         "id": "8b5f6c04.3b618",
         "type": "http request",
         "z": "a64b091a.a1bf2",
