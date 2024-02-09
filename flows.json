@@ -194,7 +194,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended?stationIds=E790",
+        "url": "https://app-prod-ws.warnwetter.de/v30/stationOverviewExtended?stationIds=05675",
         "tls": "",
         "persist": false,
         "proxy": "",
