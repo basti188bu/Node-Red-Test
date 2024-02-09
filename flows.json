@@ -260,7 +260,7 @@
         "label": "chart",
         "chartType": "line",
         "legend": "true",
-        "xformat": "",
+        "xformat": "auto",
         "interpolate": "linear",
         "nodata": "",
         "dot": false,
