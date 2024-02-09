@@ -185,7 +185,7 @@
         "y": 60,
         "wires": [
             [
-                "be352772f8a4beb7"
+                "d62539352e79994a"
             ]
         ]
     },
@@ -201,9 +201,29 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 60,
+        "x": 720,
+        "y": 80,
         "wires": []
+    },
+    {
+        "id": "d62539352e79994a",
+        "type": "function",
+        "z": "2674d96e699cd9f1",
+        "name": "function 2",
+        "func": "var Test = msg.payload;\nmsg = Test.E790;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "be352772f8a4beb7"
+            ]
+        ]
     },
     {
         "id": "8b5f6c04.3b618",
