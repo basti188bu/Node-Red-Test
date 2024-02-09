@@ -210,7 +210,7 @@
         "type": "function",
         "z": "2674d96e699cd9f1",
         "name": "function 2",
-        "func": "var Test = msg.payload;\nlet msg1 = [];\nlet forecast_1 = Test.E790.forecast1;\n\nmsg1.data = [[[forecast_1.temperature]]];\n\nmsg.payload = [msg1];\n\nreturn msg;",
+        "func": "var Test = msg.payload;\nlet msg1 = [];\nlet forecast_1 = Test.E790.forecast1;\n\nmsg1.data = [[[forecast_1.temperature]]];\n\nmsg.payload = [msg1.data];\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
