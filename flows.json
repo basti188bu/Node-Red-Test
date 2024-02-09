@@ -225,7 +225,7 @@
         "ret": "txt",
         "paytoqs": "ignore",
         "url": "https://s3.eu-central-1.amazonaws.com/app-prod-static.warnwetter.de/v16/forecast_mosmix_10184.json",
-        "tls": "d7d56761e9eab1a1",
+        "tls": "",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
