@@ -354,7 +354,7 @@
         "types": "Temperature,CO2,Humidity,Pressure,Noise",
         "creds": "7febc1c266e86c76",
         "moduleId": "70:ee:50:1c:6e:90",
-        "deviceId": "",
+        "deviceId": "70:ee:50:1c:6e:90",
         "x": 380,
         "y": 500,
         "wires": [
