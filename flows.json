@@ -163,6 +163,14 @@
         "name": ""
     },
     {
+        "id": "10fac7c2cd95011a",
+        "type": "netatmo-config-node",
+        "name": "Test-Node-Red",
+        "client_id": "65c72105fdbf1483da052446",
+        "client_secret": "RQ08JpsbdijjvLrGD1nCRs8bRVogiUMXQHpIY4IU",
+        "refresh_token": "5e1cab5ac52009000c7531b3|ea316489c30710220e7bf158bc33b607"
+    },
+    {
         "id": "eb545a934afd984b",
         "type": "inject",
         "z": "2674d96e699cd9f1",
@@ -188,7 +196,7 @@
         "wires": [
             [
                 "b2e9113c13a19b5c",
-                "5db3982c64ec6dcc"
+                "ec36125edd83db36"
             ]
         ]
     },
@@ -343,27 +351,6 @@
         "wires": []
     },
     {
-        "id": "5db3982c64ec6dcc",
-        "type": "get measurements",
-        "z": "2674d96e699cd9f1",
-        "name": "",
-        "beginDate": "",
-        "endDate": "",
-        "limit": "",
-        "scale": "max",
-        "types": "Temperature,CO2,Humidity,Pressure,Noise",
-        "creds": "7febc1c266e86c76",
-        "moduleId": "70:ee:50:1c:6e:90",
-        "deviceId": "70:ee:50:1c:6e:90",
-        "x": 380,
-        "y": 500,
-        "wires": [
-            [
-                "281793d7903b7185"
-            ]
-        ]
-    },
-    {
         "id": "281793d7903b7185",
         "type": "debug",
         "z": "2674d96e699cd9f1",
@@ -378,6 +365,19 @@
         "x": 1040,
         "y": 480,
         "wires": []
+    },
+    {
+        "id": "ec36125edd83db36",
+        "type": "netatmo-dashboard",
+        "z": "2674d96e699cd9f1",
+        "creds": "10fac7c2cd95011a",
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "281793d7903b7185"
+            ]
+        ]
     },
     {
         "id": "8b5f6c04.3b618",
