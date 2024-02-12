@@ -582,7 +582,8 @@
             ],
             [
                 "4818bed5.a4f23",
-                "c776b0f.8d51dd"
+                "c776b0f.8d51dd",
+                "fa5808ce51e4e20b"
             ]
         ]
     },
@@ -769,6 +770,27 @@
                 "f9ea60a0766d03c6"
             ]
         ]
+    },
+    {
+        "id": "fa5808ce51e4e20b",
+        "type": "ui_text",
+        "z": "a64b091a.a1bf2",
+        "group": "1495fa22.b16436",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload.avg}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 660,
+        "wires": []
     },
     {
         "id": "14c60a10.794df6",
