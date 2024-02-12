@@ -791,7 +791,7 @@
         "height": 0,
         "wrap": false,
         "passthru": true,
-        "topic": "value",
+        "topic": "topic",
         "topicType": "msg",
         "format": "{{value}}",
         "min": "1",
