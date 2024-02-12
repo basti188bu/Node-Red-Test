@@ -226,8 +226,8 @@
         "y": 140,
         "wires": [
             [
-                "d62539352e79994a",
-                "950c3cc74b034996"
+                "950c3cc74b034996",
+                "33b8f9a8ad6cf270"
             ]
         ]
     },
@@ -259,11 +259,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 340,
+        "x": 590,
+        "y": 240,
         "wires": [
             [
-                "be352772f8a4beb7",
                 "cf5e81f9b5e3d791"
             ]
         ]
@@ -383,6 +382,59 @@
         "wires": [
             [
                 "281793d7903b7185"
+            ]
+        ]
+    },
+    {
+        "id": "a5e3c20e4b6ba4ab",
+        "type": "ui_numeric",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "label": "Tage",
+        "tooltip": "",
+        "group": "1495fa22.b16436",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Days",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "33b8f9a8ad6cf270"
+            ]
+        ]
+    },
+    {
+        "id": "33b8f9a8ad6cf270",
+        "type": "join",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "d62539352e79994a",
+                "be352772f8a4beb7"
             ]
         ]
     },
