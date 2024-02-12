@@ -567,7 +567,7 @@
         "type": "function",
         "z": "a64b091a.a1bf2",
         "name": "",
-        "func": "let message = msg.payload;\nvar msg1 = {};\nvar msg2 = {};\nvar daten = [];\nvar stunden = [];\nvar preisenetto = [];\nvar preisebrutto = [];\n\nfor(let i = 0; i<message.length; i++){\n    let hour = new Date(message[i].start_timestamp);\n    let stunde = hour.getHours();\n    let price = message[i].marketprice/10;\n    \n    daten.push([price, hour]);\n    stunden.push(stunde);\n    preisenetto.push(price);\n    preisebrutto.push(price * 1.22 + 15.92);\n\n}\n\nmsg1.series = [\"Nettopreise\", \"Bruttopreise\"];\nmsg1.data = [preisenetto, preisebrutto];\nmsg1.labels = stunden;\n\n\n\n\n\nreturn [{payload: daten}, {payload: [msg1]}];\n",
+        "func": "let message = msg.payload;\nvar msg1 = {};\nvar msg2 = {};\nvar daten = [];\nvar stunden = [];\nvar preisenetto = [];\nvar preisebrutto = [];\nvar summe = 0;\nvar durchschnitt = 0;\n\nfor(let i = 0; i<message.length; i++){\n    let hour = new Date(message[i].start_timestamp);\n    let stunde = hour.getHours();\n    let price = message[i].marketprice/10;\n    \n    daten.push([price, hour]);\n    stunden.push(stunde);\n    preisenetto.push(price);\n    preisebrutto.push(price * 1.22 + 15.92);\n\n    summe = summe + (price * 1.22 + 15.92);\n    durchschnitt = summe / i;\n\n}\n\nmsg1.series = [\"Nettopreise\", \"Bruttopreise\"];\nmsg1.data = [preisenetto, preisebrutto];\nmsg1.labels = stunden;\nmsg1.sum = summe;\nmsg1.avg = durchschnitt;\n\n\n\n\n\nreturn [{payload: daten}, {payload: [msg1]}];\n",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
