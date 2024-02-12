@@ -211,8 +211,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 280,
-        "y": 60,
+        "x": 320,
+        "y": 140,
         "wires": [
             [
                 "d62539352e79994a",
@@ -546,7 +546,8 @@
         "y": 100,
         "wires": [
             [
-                "f9ea60a0766d03c6"
+                "f9ea60a0766d03c6",
+                "70407cb0bbf6cd50"
             ]
         ]
     },
@@ -688,8 +689,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 120,
+        "x": 340,
+        "y": 100,
         "wires": [
             [
                 "8e76b58864730104"
@@ -722,11 +723,83 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
-        "y": 180,
+        "x": 530,
+        "y": 160,
         "wires": [
             [
                 "8b5f6c04.3b618"
+            ]
+        ]
+    },
+    {
+        "id": "70407cb0bbf6cd50",
+        "type": "join",
+        "z": "a64b091a.a1bf2",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "6470ac4f711048df"
+            ]
+        ]
+    },
+    {
+        "id": "6470ac4f711048df",
+        "type": "debug",
+        "z": "a64b091a.a1bf2",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "857daf9c51987025",
+        "type": "ui_numeric",
+        "z": "a64b091a.a1bf2",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "1495fa22.b16436",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "payload",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "70407cb0bbf6cd50"
             ]
         ]
     },
