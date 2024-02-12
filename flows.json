@@ -738,7 +738,7 @@
         "name": "",
         "mode": "custom",
         "build": "array",
-        "property": "",
+        "property": "payload",
         "propertyType": "msg",
         "key": "topic",
         "joiner": "\\n",
