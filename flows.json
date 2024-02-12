@@ -195,14 +195,15 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Wetter",
-        "payload": "0",
+        "payload": "1",
         "payloadType": "str",
         "x": 100,
         "y": 60,
         "wires": [
             [
                 "b2e9113c13a19b5c",
-                "f1d8486043c8fc17"
+                "f1d8486043c8fc17",
+                "a5e3c20e4b6ba4ab"
             ]
         ]
     },
