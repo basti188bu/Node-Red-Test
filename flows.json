@@ -375,27 +375,6 @@
         ]
     },
     {
-        "id": "3d7fb08a660d9bb5",
-        "type": "ui_template",
-        "z": "2674d96e699cd9f1",
-        "group": "1495fa22.b16436",
-        "name": "",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 240,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8b5f6c04.3b618",
         "type": "http request",
         "z": "a64b091a.a1bf2",
