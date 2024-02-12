@@ -378,8 +378,8 @@
         "type": "netatmo-dashboard",
         "z": "2674d96e699cd9f1",
         "creds": "10fac7c2cd95011a",
-        "x": 340,
-        "y": 400,
+        "x": 320,
+        "y": 340,
         "wires": [
             [
                 "281793d7903b7185"
