@@ -158,6 +158,14 @@
         "className": ""
     },
     {
+        "id": "10fac7c2cd95011a",
+        "type": "netatmo-config-node",
+        "name": "Test-Node-Red",
+        "client_id": "65c72105fdbf1483da052446",
+        "client_secret": "RQ08JpsbdijjvLrGD1nCRs8bRVogiUMXQHpIY4IU",
+        "refresh_token": "5e1cab5ac52009000c7531b3|ea316489c30710220e7bf158bc33b607"
+    },
+    {
         "id": "eb545a934afd984b",
         "type": "inject",
         "z": "2674d96e699cd9f1",
@@ -342,7 +350,7 @@
         "type": "debug",
         "z": "2674d96e699cd9f1",
         "name": "debug 8",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -350,7 +358,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 700,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -358,8 +366,8 @@
         "type": "netatmo-dashboard",
         "z": "2674d96e699cd9f1",
         "creds": "10fac7c2cd95011a",
-        "x": 360,
-        "y": 420,
+        "x": 400,
+        "y": 460,
         "wires": [
             [
                 "281793d7903b7185"
