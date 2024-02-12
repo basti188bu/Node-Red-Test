@@ -762,7 +762,7 @@
         "topicType": "str",
         "format": "{{value}}",
         "min": "0",
-        "max": 10,
+        "max": "31",
         "step": 1,
         "className": "",
         "x": 300,
