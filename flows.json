@@ -540,7 +540,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "",
+        "payload": "1",
         "payloadType": "str",
         "topic": "Button",
         "topicType": "str",
@@ -802,7 +802,8 @@
         "y": 260,
         "wires": [
             [
-                "70407cb0bbf6cd50"
+                "70407cb0bbf6cd50",
+                "f9ea60a0766d03c6"
             ]
         ]
     },
