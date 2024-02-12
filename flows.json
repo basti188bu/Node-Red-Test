@@ -328,7 +328,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "0",
+        "payload": "1",
         "payloadType": "str",
         "topic": "Wetter",
         "topicType": "str",
