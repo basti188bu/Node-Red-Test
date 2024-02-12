@@ -158,11 +158,6 @@
         "className": ""
     },
     {
-        "id": "7febc1c266e86c76",
-        "type": "configNode",
-        "name": ""
-    },
-    {
         "id": "10fac7c2cd95011a",
         "type": "netatmo-config-node",
         "name": "Test-Node-Red",
