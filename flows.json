@@ -336,7 +336,8 @@
         "y": 180,
         "wires": [
             [
-                "b2e9113c13a19b5c"
+                "b2e9113c13a19b5c",
+                "a5e3c20e4b6ba4ab"
             ]
         ]
     },
@@ -440,6 +441,29 @@
             [
                 "d62539352e79994a"
             ]
+        ]
+    },
+    {
+        "id": "d2f9d2933f867bde",
+        "type": "switch",
+        "z": "2674d96e699cd9f1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
